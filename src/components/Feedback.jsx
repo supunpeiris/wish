@@ -26,7 +26,7 @@ export default function Feedback({ onRestart }) {
 
           ඔබගේ මේ සුන්දර විවාහ සංවත්සරය තවත් බොහෝ කාලයක් 
           සතුටින්, සාමයෙන් සහ නිදුක් නීරෝගීව සමරන්නට ලැබේවා යැයි 
-          අපි හදවතින්ම ප්‍රාර්ථනා කරමු!`}
+          අපි හදවතින්ම ප්‍රාර්ථනා කරමු!❤️`}
         </p>
         
         <p style={{ marginTop: '2.5rem', fontSize: '1.2rem', fontFamily: 'var(--font-heading)', color: 'var(--rose-dark)', fontStyle: 'italic' }}>
