@@ -1,0 +1,106 @@
+.wishes-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  gap: 0;
+}
+
+.wishes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 2.4rem;
+}
+
+.wish-card {
+  padding: 1.8rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.wish-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 16px 44px rgba(180, 130, 50, 0.16),
+    0 2px 0 rgba(255, 255, 255, 0.65) inset;
+}
+
+.wish-emoji {
+  font-size: 2.4rem;
+  display: block;
+}
+
+.wish-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--rose-dark);
+  font-weight: 500;
+}
+
+.wish-text {
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: var(--text-mid);
+  white-space: pre-line;
+}
+
+/* Footer */
+.wishes-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.wishes-toast {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.6rem;
+  color: var(--rose-dark);
+}
+
+/* Shared across sections */
+.section-header {
+  text-align: center;
+  margin-bottom: 1.6rem;
+  width: 100%;
+}
+
+.section-emoji {
+  display: block;
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 0.3rem;
+}
+
+.section-sub {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.section-action {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .wishes-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .wish-card {
+    padding: 1.4rem 1rem;
+  }
+}

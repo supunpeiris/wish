@@ -1,0 +1,81 @@
+.message-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  padding-top: 60px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 1.6rem;
+  width: 100%;
+}
+
+.section-emoji {
+  display: block;
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 0.3rem;
+}
+
+.section-sub {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.msg-card {
+  width: 90%;
+  max-width: 600px;
+  padding: 2.8rem 2.4rem;
+  margin: 0 auto 2rem;
+}
+
+.msg-to {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--rose-dark);
+  margin-bottom: 1.8rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(230, 180, 80, 0.15);
+}
+
+.msg-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  color: var(--text-mid);
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.msg-italic {
+  font-style: italic;
+  color: var(--text-soft) !important;
+}
+
+.msg-signature {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--rose-dark);
+  text-align: right;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(230, 180, 80, 0.12);
+}
+
+.section-action {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .msg-card {
+    padding: 2rem 1.5rem;
+  }
+}
