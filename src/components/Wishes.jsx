@@ -1,4 +1,4 @@
-import "./wishes.css";
+import "./Wishes.css";
 
 const WISHES = [
   
